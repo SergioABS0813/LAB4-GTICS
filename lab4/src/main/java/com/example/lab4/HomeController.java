@@ -14,4 +14,19 @@ public class HomeController {
         return "index";
     }
 
+    @GetMapping(value = {"/empleados"})
+    public String verEmpleados(){
+        return "/empleados";
+    }
+
+    @GetMapping(value = {"/historial"})
+    public String verHistorial(){
+        return "/historial";
+    }
+
+    @GetMapping(value = {"/reportes"})
+    public String verReportes(){
+        return "/reportes";
+    }
+
 }
